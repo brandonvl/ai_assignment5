@@ -43,6 +43,12 @@
     <Filter Include="Source Files\model\rabbitStates">
       <UniqueIdentifier>{395414ba-6bcd-4c71-ae7e-89b85a6c9ab7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\states\cowStates">
+      <UniqueIdentifier>{62c71a33-2472-42e6-9c89-917c0cc9cca8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\states\rabbitStates">
+      <UniqueIdentifier>{81bea902-6914-41a1-af82-69147c6ba22a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -95,6 +101,15 @@
     </ClCompile>
     <ClCompile Include="Pill.cpp">
       <Filter>Source Files\model</Filter>
+    </ClCompile>
+    <ClCompile Include="CowWanderState.cpp">
+      <Filter>Source Files\model\cowStates</Filter>
+    </ClCompile>
+    <ClCompile Include="CowFleeState.cpp">
+      <Filter>Source Files\model\cowStates</Filter>
+    </ClCompile>
+    <ClCompile Include="RabbitPursuitState.cpp">
+      <Filter>Source Files\model\rabbitStates</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -160,6 +175,15 @@
     </ClInclude>
     <ClInclude Include="Pill.h">
       <Filter>Header Files\model</Filter>
+    </ClInclude>
+    <ClInclude Include="CowWanderState.h">
+      <Filter>Header Files\states\cowStates</Filter>
+    </ClInclude>
+    <ClInclude Include="CowFleeState.h">
+      <Filter>Header Files\states\cowStates</Filter>
+    </ClInclude>
+    <ClInclude Include="RabbitPursuitState.h">
+      <Filter>Header Files\states\rabbitStates</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -36,7 +36,11 @@ GameGeneticInstance::GameGeneticInstance(Game &game, GameGeneticInstanceColor co
 }
 
 void GameGeneticInstance::update(Game &game, double time_elapsed) {
-
+	
+	_cow->update(game, time_elapsed);
+	_rabbit->update(game, time_elapsed);
+	_weapon->update(game, time_elapsed);
+	_pill->update(game, time_elapsed);
 }
 
 void GameGeneticInstance::draw(Game &game, double time_elapsed) {

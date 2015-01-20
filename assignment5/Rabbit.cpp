@@ -2,20 +2,21 @@
 #include "Cow.h"
 #include "Game.h"
 #include "Drawer.h"
-#include "RabbitWanderState.h"
+#include "RabbitPursuitState.h"
 #include "GameGeneticInstance.h"
 
 #include <iostream>
 
 Rabbit::Rabbit(Game &game) : Vehicle(new Vector2D(350.0, 600.0), 10.0, new Vector2D(0.0, 0.0), 0.1, 4.0, 150.0, 15.0, 15.0)
 {
+	_points = 0;
 	setDrawColor(255, 0, 0);
 	makeMachine(game);
 }
 
 void Rabbit::makeMachine(Game &game) {
 	_stateMachine = new StateMachine<Rabbit>(this, game);
-	_stateMachine->setCurrentState(new RabbitWanderState("RabbitWanderState"));
+	_stateMachine->setCurrentState(new RabbitPursuitState("RabbitPursuitState"));
 }
 
 void Rabbit::update(Game &game, const double &time_elapsed) {

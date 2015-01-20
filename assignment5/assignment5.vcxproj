@@ -83,7 +83,9 @@
   <ItemGroup>
     <ClCompile Include="BaseGameEntity.cpp" />
     <ClCompile Include="Cow.cpp" />
+    <ClCompile Include="CowFleeState.cpp" />
     <ClCompile Include="CowPursuitState.cpp" />
+    <ClCompile Include="CowWanderState.cpp" />
     <ClCompile Include="Drawer.cpp" />
     <ClCompile Include="EntityManager.cpp" />
     <ClCompile Include="Game.cpp" />
@@ -94,6 +96,7 @@
     <ClCompile Include="Pill.cpp" />
     <ClCompile Include="Rabbit.cpp" />
     <ClCompile Include="RabbitFleeState.cpp" />
+    <ClCompile Include="RabbitPursuitState.cpp" />
     <ClCompile Include="RabbitWanderState.cpp" />
     <ClCompile Include="SteeringBehaviors.cpp" />
     <ClCompile Include="Vehicle.cpp" />
@@ -102,7 +105,9 @@
   <ItemGroup>
     <ClInclude Include="BaseGameEntity.h" />
     <ClInclude Include="Cow.h" />
+    <ClInclude Include="CowFleeState.h" />
     <ClInclude Include="CowPursuitState.h" />
+    <ClInclude Include="CowWanderState.h" />
     <ClInclude Include="Drawer.h" />
     <ClInclude Include="EntityManager.h" />
     <ClInclude Include="Game.h" />
@@ -113,6 +118,7 @@
     <ClInclude Include="Pill.h" />
     <ClInclude Include="Rabbit.h" />
     <ClInclude Include="RabbitFleeState.h" />
+    <ClInclude Include="RabbitPursuitState.h" />
     <ClInclude Include="RabbitWanderState.h" />
     <ClInclude Include="Sprite.h" />
     <ClInclude Include="State.h" />

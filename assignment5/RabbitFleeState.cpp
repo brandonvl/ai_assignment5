@@ -18,7 +18,7 @@ bool RabbitFleeState::onMessage(Rabbit *entity, const Telegram &msg, Game &game)
 void RabbitFleeState::enter(Rabbit *entity, Game &game)
 {
 	std::cout << "Rabbit Has Entered FleeState \n";
-	entity->setMaxSpeed(entity->getFleeSpeed());
+	//  entity->setMaxSpeed(entity->getFleeSpeed());
 }
 
 void RabbitFleeState::update(Rabbit *entity, Game &game)
@@ -26,12 +26,13 @@ void RabbitFleeState::update(Rabbit *entity, Game &game)
 	if (entity->getSteeringBehaviors().isWanderOn())
 		entity->getSteeringBehaviors().wanderOff();
 
+	/*
 	if (!entity->getSteeringBehaviors().isEvadeOn())
 		entity->getSteeringBehaviors().evadeOn(&game.getCow(),entity->getPanicDistance());
 
 	if (Vec2DDistanceSq(*entity->getPos(), *game.getCow().getPos()) > entity->getSafeDistance())
 		entity->getStateMachine().changeState(new RabbitWanderState("RabbitWanderState"));
-
+	*/
 
 	// Als koe dichtbij is
 	
